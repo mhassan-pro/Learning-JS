@@ -16,3 +16,9 @@ Then return back the following statement to the user as an alert (by substitutin
 their name & age) :
 name is age years old.
 [Use template Literals to print this sentence] */ 
+
+let userName = prompt("Enter user's name");
+let userAge = prompt("Enter user's age");
+
+let massage = `${userName} is ${userAge} year's old.`;
+alert(massage);
