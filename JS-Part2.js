@@ -71,3 +71,44 @@ else
 {
     console.log("It is not golden");
 }
+
+/* Qs5. Write a program to find the largest of 3 numbers.  */
+let num1 = 10;
+let num2 = 20;
+let num3 = 30;
+
+if (num1 > num2 )
+{
+    if (num1 > num3)
+    {
+        console.log(num1 + "is greater");
+    }
+    else
+    {
+        console.log(num3 + "is greater");
+    }
+}
+else if (num2 > num3)
+{
+    console.log(num2 + "is grater");
+}
+else
+{
+    console.log(num3 + "is greater");
+}
+
+console.log("---------------------------------------------------------------------");
+
+/* Qs6 (Bonus). Write a program to check if 2 numbers have the same last digit.
+Eg : 32 and 47852 have the same last digit i.e. 2  */
+let a = 34523;
+let b = 78624;
+
+if (a%10 == b%10)
+{
+    console.log("Both numbers have same last digits.");
+}
+else
+{
+    console.log("Last digits of both numbers are not same.")
+}
