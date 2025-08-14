@@ -168,3 +168,16 @@ let roll = prompt("Your roll number is");
 console.log(name + "  "+ age+ "  " +roll);
 let msg = (name + " " + roll);
 alert(msg);
+
+
+// string methods
+// using trim to remove whitespaces
+let str = "        hello world!";
+let newStr= str.trim();
+console.log(newStr);
+
+
+let x = prompt("Enter your name");
+let y = prompt("Enter your age");
+let z = x.trim() + " " + y.trim();
+alert(z);
