@@ -181,3 +181,11 @@ let x = prompt("Enter your name");
 let y = prompt("Enter your age");
 let z = x.trim() + " " + y.trim();
 alert(z);
+
+// upper and lower case method
+
+let fruit = "aPpLe";
+
+fruit.toUpperCase();
+fruit.toLowerCase();
+console.log(fruit.toUpperCase() + "  " + fruit.toLowerCase());
