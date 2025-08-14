@@ -1,6 +1,4 @@
-
- console.log("---------------------------------------------------------------------");
-
+// JavaScript Code Practice
 //else if statements Practice
 
 let age = 17;
@@ -189,3 +187,10 @@ let fruit = "aPpLe";
 fruit.toUpperCase();
 fruit.toLowerCase();
 console.log(fruit.toUpperCase() + "  " + fruit.toLowerCase());
+
+
+// ondex of string method
+let sentence = "The Quick fox jumps over the lazy dog.";
+
+sentence.indexOf("fox");
+
