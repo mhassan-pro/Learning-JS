@@ -208,3 +208,25 @@ let newMsg = MSG.trim().toUpperCase();
 alert(newMsg);
 console.log(newMsg);
 
+
+//slice method
+// The slice() method extracts a section of a string and returns it as a new string,
+
+let text = "hello" ;
+
+console.log( text.slice(2 , 4) ); // starting and ending
+console.log(text.slice(0)); // only starting
+console.log(text.slice(-1)); // negative index give the last character bu using formula (length-index).
+
+// replace method
+// The replace() method replaces a specified value with another value in a string.
+let newText = "My name";
+console.log( newText.replace("My" , "Your") );// first search value and then new vale, work on first occurrence only.
+
+// repeat method
+// The repeat() method returns a new string with a specified number of copies of an existing string.
+let repeatText = "CUST";
+console.log( repeatText.repeat(10) );
+
+
+
