@@ -168,7 +168,7 @@ let msg = (name + " " + roll);
 alert(msg);
 
 
-// string methods
+// string methods [trim,toUpperCase,toLowerCase,indexOf,slice,replace,repeat]
 // using trim to remove whitespaces
 let str = "        hello world!";
 let newStr= str.trim();
@@ -227,6 +227,37 @@ console.log( newText.replace("My" , "Your") );// first search value and then new
 // The repeat() method returns a new string with a specified number of copies of an existing string.
 let repeatText = "CUST";
 console.log( repeatText.repeat(10) );
+
+// Arrays
+// linear collection of elements.
+let students = ["Hassan","Rajaab","Maryam","Zaynab"];
+console.log(students[3]); //Zaynab
+
+let numbers = [2,4,6,8,3,5,7,9];
+console.log(numbers[6]); //7
+
+let info = ["Hassan", 90, 5.8];
+console.log(info.length-1);
+console.log(info[0][3]); // 1 squaare bracket is for index of array and second is for index of string.
+
+// arrays mutable
+
+let fruits = ["mango","kiwi","grapes"];
+
+fruits[1] = "banana";
+
+console.log(fruits);
+
+// Arrays method [push, pop, unshift, shift].
+
+let cars = ["BMW","Toyota","Honda","BYD"];
+console.log(cars.push("Suzuki")); //it adds a new index at the end of the array and returns the new length of the array.
+console.log(cars.pop()); //it will delete the last index of the array and return the deleted value.
+console.log(cars.unshift("Skyline")); // it will add a new index at the start of the array and return the new length of the array.
+console.log(cars.shift()); // it will delete the first index of the array and return the deleted value.
+
+
+
 
 
 
