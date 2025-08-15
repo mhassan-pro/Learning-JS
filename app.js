@@ -248,13 +248,48 @@ fruits[1] = "banana";
 
 console.log(fruits);
 
-// Arrays method [push, pop, unshift, shift].
+// Arrays method , adding or removing elements :[push, pop, unshift, shift].
 
 let cars = ["BMW","Toyota","Honda","BYD"];
 console.log(cars.push("Suzuki")); //it adds a new index at the end of the array and returns the new length of the array.
 console.log(cars.pop()); //it will delete the last index of the array and return the deleted value.
 console.log(cars.unshift("Skyline")); // it will add a new index at the start of the array and return the new length of the array.
 console.log(cars.shift()); // it will delete the first index of the array and return the deleted value.
+
+
+// arrays method for searching and accessing elements: [indexOf, lastIndexOf, includes, find, findIndex].
+// indexOf() , includes()
+
+let animals = ["cat","dog","loin","tiger"]
+
+animals.indexOf("loin"); // if its found it will return the index  otherwise it will return -1.
+
+animals.includes("cat"); // if its found it will give true otherwise false.
+
+// arrays method concatination ( concat() ), reverse
+
+let arr1 = [1,2,3,4,5];
+let arr2 = [6,7,8,9,10];
+
+arr1.concat(arr2); // it will combine arr1 and arr2 and return a new array.
+
+arr2.concat(arr1); // it will combine arr2 and arr1 and return a new array.
+
+arr1.reverse(); // it will reverse the order of elements in array.
+
+// arrays method slice(original array remains same), splice(original array changes)
+
+
+let newArr = ["AA","BB","CC","DD","EE"];
+
+newArr.slice(-1); // it will return a new array with the last element of the original array.
+newArr.slice(3); // it will return a new array with elements from index 3 to the end of the array.
+newArr,slice(1,3); // it will return a new array with elements from index 1 to index 3 (not including index 3).
+
+newArr.splice(1,2,"YY"); // it will remove 2 elements from index 1 and add "YY" in their place, original array will be changed.
+
+
+
 
 
 
