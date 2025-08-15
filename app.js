@@ -288,6 +288,12 @@ newArr,slice(1,3); // it will return a new array with elements from index 1 to i
 
 newArr.splice(1,2,"YY"); // it will remove 2 elements from index 1 and add "YY" in their place, original array will be changed.
 
+// array sort method 
+// by default it sorts in ascending order (only strings means alphabetic order), for numbers we need to provide a compare function.
+
+let numArr = ["z","q","b","a","h","s"];
+
+numArr.sort();
 
 
 
