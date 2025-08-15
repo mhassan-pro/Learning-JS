@@ -190,7 +190,21 @@ console.log(fruit.toUpperCase() + "  " + fruit.toLowerCase());
 
 
 // ondex of string method
+// The indexOf() method returns the position of the first occurrence of a specified value in a string.
+// The indexOf() method returns -1 if the value is not found.
 let sentence = "The Quick fox jumps over the lazy dog.";
 
-sentence.indexOf("fox");
+sentence.indexOf("fox");     // return 10
+sentence.indexOf("over");   // return 20
+sentence.indexOf("not");   // return -1 (not found)
+sentence.indexOf("dog");  // return 34
+sentence.indexOf("T");   // retrun 0 (case-sensitive)
+
+
+// method chaining
+
+let MSG = " Hello ";
+let newMsg = MSG.trim().toUpperCase();
+alert(newMsg);
+console.log(newMsg);
 
