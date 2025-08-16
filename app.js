@@ -189,7 +189,7 @@ fruit.toLowerCase();
 console.log(fruit.toUpperCase() + "  " + fruit.toLowerCase());
 
 
-// ondex of string method
+// index of string method
 // The indexOf() method returns the position of the first occurrence of a specified value in a string.
 // The indexOf() method returns -1 if the value is not found.
 let sentence = "The Quick fox jumps over the lazy dog.";
@@ -202,7 +202,7 @@ sentence.indexOf("T");   // retrun 0 (case-sensitive)
 
 
 // method chaining
-
+// so we can use multiple methods in a single line.
 let MSG = " Hello ";
 let newMsg = MSG.trim().toUpperCase();
 alert(newMsg);
@@ -214,9 +214,9 @@ console.log(newMsg);
 
 let text = "hello" ;
 
-console.log( text.slice(2 , 4) ); // starting and ending
+console.log( text.slice(2 , 4) ); // starting index and ending index which in exclusive.
 console.log(text.slice(0)); // only starting
-console.log(text.slice(-1)); // negative index give the last character bu using formula (length-index).
+console.log(text.slice(-1)); // negative index give the last character by using formula (length-index).
 
 // replace method
 // The replace() method replaces a specified value with another value in a string.
@@ -295,6 +295,27 @@ let numArr = ["z","q","b","a","h","s"];
 
 numArr.sort();
 
+// arrays refrences :( address in memory)
+// it combines thw both arrays and change in any array will appear change in other array as well.
+
+
+let char = ['a','b','c','d','e'];
+let charCopy = char;
+
+// arrays constant
+//using (const) with a variable in arrays the value can be changed but not the address in the memory.
+const numArr1 = [1,2,3,4,5];
+numArr1.push(6); //this is allowed
+numArr1[3] = 12; // this is allowed
+
+numArr1 = [4,5,7,2,9]; // this is not allowed
+
+
+// nested arrays
+
+let nestedArr = [[1,2,3],[6,3,8],[8,0,3],[2,6,3],[1,7,3]];
+
+console.log(nestedArr[2][2]) // first is row index and second is column index, it will return 3.
 
 
 
