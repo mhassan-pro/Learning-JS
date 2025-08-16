@@ -19,7 +19,7 @@ let n2 = -3;
 let ans2 = arr2.slice(n2);
 console.log(ans2);
 
-/* Qs3. Write a JavaScript program to check whether a string is blank or not. */
+// Qs3. Write a JavaScript program to check whether a string is blank or not. 
 let str = "";
 if(str.length == 0){
     console.log("String is blank.");
@@ -27,6 +27,7 @@ if(str.length == 0){
 else{
     console.log("String is not empty.");
 }
+
 
 /* Qs4. Write a JavaScript program to test whether the character at the given (character)
 index is lower case. */
@@ -38,4 +39,21 @@ if( str1[index]  === str1[index].toLowerCase() ){
 }
 else{
     console.log(`Character at index ${index} is not lower case.`)
+}
+
+// Qs5. Write a JavaScript program to strip leading and trailing spaces from a string. 
+
+let str3 = "                     Apna College         ";
+let finalStr = str3.trim();
+console.log(finalStr);
+
+//Qs6. Write a JavaScript program to check if an element exists in an array or not. 
+let nums = [1,2,3,4,5];
+let element = 2;
+if ( !(nums.indexOf(element)  == -1) )
+{
+    console.log("Element exists");
+}
+else{
+    console.log("Element does not exists.");
 }
