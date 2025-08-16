@@ -2,3 +2,4 @@
 
 let game = [['X',null,'X'],[null,'X',null],['o',null,'X']];
 
+game[0][1] =  'o';
