@@ -33,6 +33,9 @@ for ( let k = 2; k<=10; k++)
 
 console.log("----------------------------");
 // print multiplication table of five.
+let n = prompt("Enter a number to print its multiplication table: ");
+n = parseInt(n);
+
 for ( let m = 1; m <= 10; m++){
-    console.log(`5 * ${m} = ${5 * m}.`)
+    console.log(`${n} * ${m} = ${n * m}.`);
 }
