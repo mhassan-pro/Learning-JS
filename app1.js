@@ -38,4 +38,21 @@ n = parseInt(n);
 
 for ( let m = 1; m <= 10; m++){
     console.log(`${n} * ${m} = ${n * m}.`);
+} 
+
+console.log("----------------------------");
+
+// nested loops ( use to iterate a piece of code inside another loop).
+
+for ( let o = 1; o<= 5 ; o++)
+{
+    console.log(`Outer loop : ${o}`);
+    for (let p = 1; p <= 5; p++ )
+    {
+        console.log(`Inner loop ${p}`)
+    }
 }
+
+console.log("----------------------------");
+// while loop syntax [ while(Condition) {statement} ].
+ 
