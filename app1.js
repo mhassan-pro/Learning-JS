@@ -55,4 +55,9 @@ for ( let o = 1; o<= 5 ; o++)
 
 console.log("----------------------------");
 // while loop syntax [ while(Condition) {statement} ].
- 
+let x = 1;
+while (x <= 5)
+{
+  console.log(`Number :${x}`);
+  x++;
+}
