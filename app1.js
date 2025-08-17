@@ -21,3 +21,18 @@ for ( let j = 1; j<=15; j++)
 }
 
 console.log("----------------------------");
+// print 1 to 15 even numbers.
+
+for ( let k = 2; k<=10; k++)
+{
+    if ( k % 2 == 0 )
+    {
+        console.log(k);
+    }
+}
+
+console.log("----------------------------");
+// print multiplication table of five.
+for ( let m = 1; m <= 10; m++){
+    console.log(`5 * ${m} = ${5 * m}.`)
+}
