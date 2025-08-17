@@ -61,3 +61,20 @@ while (x <= 5)
   console.log(`Number :${x}`);
   x++;
 }
+
+console.log("----------------------------");
+// break keyword
+
+while (x <= 10)
+
+    {
+        if(x == 6)
+        {
+            break;
+        }
+        console.log(`Number :${x}`);
+        x++;
+    }
+
+console.log("----------------------------");
+//
