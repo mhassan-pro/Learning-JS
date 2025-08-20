@@ -1,5 +1,5 @@
 let todo = [];
-let req = prompt("please enter your request");
+let req = prompt("Enter your request");
 
 while(true){
     if(req == "quit"){
@@ -21,6 +21,14 @@ while(true){
             todo.push(task);
             console.log(`( ${task} ) added `);
         }
-       req =  prompt("please enter your request");
-    
+       req =  prompt("Enter your request");
+
+       if (req == "delete")
+       {
+        let del = prompt("Enter task index to delete")
+        todo.splice(del, 1);
+        console.log(`Task with index ${del} deleted`);
+       }
+
+
 }
