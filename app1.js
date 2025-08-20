@@ -95,8 +95,18 @@ let heroes = [ ["spiderman","batman","superman","ironman"],["wonder women","capt
 
 for ( let i =0; i<heroes.length; i++)
 {
+    console.log(i, heroes[i],heroes[i].length);
     for (let j = 0; j<heroes[i].length; j++)
     {
-        console.log(heroes[i][j]);
+        console.log(`j=${[j]}, ${heroes[i][j]}`);
     }
+}
+
+// for of loop syntax [ for(element of arrays)]
+
+let fruits2 = ["apple","grapes","kiwi","orange","peach","banana"];
+
+for( fruit of fruits2  )
+{
+    console.log(fruit);
 }
