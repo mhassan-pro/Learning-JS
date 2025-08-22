@@ -11,3 +11,30 @@ for ( let i = 0; i< arr.length; i++){
     }
 }
 console.log(arr);
+
+/* Qs2. Write a JS program to find the no of digits in a number.
+Example : if number = 287152, count = 6 */
+let number = 287252;
+let count =  0;
+let copy = number;
+
+while(copy > 0)
+{
+     copy = Math.floor(copy/10);
+    count++;
+}
+console.log(count);
+
+/* Qs3. Write a JS program to find the sum of digits in a number.
+Example : if number = 287152, sum = 25  */
+let num1 = 287152;
+let sum = 0;
+let copy1 = num1;
+
+while(copy1 > 0 )
+{
+    digit = copy1 % 10;
+    sum += digit;
+    copy1 = Math.floor(copy1/10);
+}
+console.log(sum);
