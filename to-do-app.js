@@ -23,7 +23,7 @@ while(true){
         }
        req =  prompt("Enter your request");
 
-       if (req == "delete")
+      if(req == "delete")
        {
         let del = prompt("Enter task index to delete")
         todo.splice(del, 1);
