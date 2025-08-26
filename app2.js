@@ -29,3 +29,15 @@ console.log(student.marks);
 
  };
 
+ /* Get values 
+   1: (object name.property)  we use object name a dot and property
+   2:(object name["property"]) in this we use object name and then square brackets and inside
+   square brackets properties are written in side double quotes */
+
+ console.log(post.username); //method 1 
+ console.log(post.tags[0]);  // method 1 
+ console.log(post["content"]); //method 2
+ 
+
+
+
