@@ -22,7 +22,7 @@ console.log(student.marks);
 
  const post = {
     username : "@muhammadhassan",
-    content : "Develpor Road-Map",
+    content : "Developer Road-Map",
     likes : 200,
     reports : 5,
     tags : ["@apnacollege", "@developerroadmap"]
