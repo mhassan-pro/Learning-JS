@@ -54,9 +54,21 @@ delete student.marks; // it will delete that specific property.
 
 console.log(`After deleting marks property :`, student);
 
+// Nested Objects
 
 
- 
+const classInfo = {
+ ali : { 
+          grade : "A+", city : "Lahore"  
+        },
 
+ umer : {
+          grade : "B+", city : "Karachi"  
+        },
 
+ umair : {
+           grade : "A", city : "Islamabad" 
+          }
+};
 
+console.log(classInfo.umer.city,"  ",classInfo.ali.grade);
