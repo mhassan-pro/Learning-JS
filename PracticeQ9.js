@@ -58,3 +58,9 @@ for (let i = 1; i<=n ; i++)
 
 }
 console.log(fact);
+
+/* Qs5. Find the largest number in an array with only positive numbers.  */
+
+let arr2 = [1,2,3,4,5,6,7,8] 
+
+
