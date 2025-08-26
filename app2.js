@@ -40,13 +40,21 @@ console.log(student.marks);
  console.log(post.tags[0]);  // method 1 
  console.log(post["content"]); //method 2
 
-/* Add & Update Values */
+/* Add , Update and delete Values */
 
 student.name = "Zaynab"; // updated name
 console.log(`Updated student name : ${student.name}`);
 
 student.age = 17;
 console.log(`Updated student age : ${student.age}.`);
+
+console.log(`Updated Student object :`, student);
+
+delete student.marks; // it will delete that specific property.
+
+console.log(`After deleting marks property :`, student);
+
+
 
  
 
