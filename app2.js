@@ -81,5 +81,7 @@ const classInfo =
 ];
 console.log(classInfo[1].name ,"   ",classInfo[2].grade,"  ",classInfo[0].city);
 console.log(classInfo[0]);
+classInfo[0].grade = "C+";
+console.log("After updating the grades of first object :",classInfo[0]) 
 
 
