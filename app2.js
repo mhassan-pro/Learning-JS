@@ -84,4 +84,16 @@ console.log(classInfo[0]);
 classInfo[0].grade = "C+";
 console.log("After updating the grades of first object :",classInfo[0]) 
 
+/*Math Objest  
+  1 - Math.abs(x) it will return the value in absolute form (convert negative number into positive ) 
+   2 - Math.pow(x,y) it is use to calculate the power of a number.
+   3 - Math.floor(x) to round of nearest smallest integer value.
+   4 - Math.ceil(x)  to round of nearest largest  integer value.
+   5 - Math.random(x) it gives random value between 0 to 1 and 1 is exclusive.
+*/
+console.log("Absolute value of -4 is :",Math,abs(-4)); // output : 4
+console.log("6 ^ 5 is: ",Math.pow(6,5));// output : 7776
+console.log("Nearest  or smallest value of 7.2 is : ",Math.floor(7.2)); // Output : 7 
+console.log("Nearest  or largest value of 7.2 is : ",Math.ceil(7.2)); // Output : 8
+console.log("Random numbers between 0 to 1 are : ",Math.random()); // output : 0.37202420219989973
 
