@@ -1,8 +1,15 @@
 /* Qs1. Create a program that generates a random number representing a dice roll.
    [The number should be between 1 and 6]. */
-
-   let diceRoll = Math.floor(Math.random() * 6) + 1;
-   console.log("Dice Roll :",diceRoll);
+   let dice = prompt("Roll the dice (Press Enter)");
+   while(true){
+    if( dice == "quit"){
+        console.log("End")
+        break;
+    }
+    let diceRoll = Math.floor(Math.random() * 6) + 1;
+    console.log("Dice Roll :",diceRoll);
+    dice = prompt("Roll again dice");
+   }
 
 /* Qs2. Create an object representing a car that stores the following properties for the
    car: name, model, color.
