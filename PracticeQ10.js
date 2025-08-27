@@ -11,18 +11,23 @@ console.log("Random number between 1 to 5 is : ",newRandomNumber);
 // Guessing Game
 const max = prompt("Enter the max number");
 
-const  random = Math.floor(Math.random() * n) + 1;
+const  random = Math.floor(Math.random() * max) + 1;
 
-let guess = prompt("Guess the random number");
+let guess = prompt(`You entered ${max} .Guess random number`);
 
 while(true){
     if( guess === ("quit" || "Quit"))
     {
         console.log("You Quit ");
+        console.log("The random number was :",random);
         break;
     }
     if (guess == random)
     {
         console.log("You win")
+        break;
+    }
+    else{
+        guess = prompt("Your guess was wrong!, try again");
     }
 };
