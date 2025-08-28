@@ -154,6 +154,32 @@ function sumReturn(a,b){
 }
 console.log(sumReturn(3,6));
 
+// Scope  [Function , Block , Laxical ,Global]
+/* - Function Scope
+  Variables defined inside a function are not accessible from 
+  outside the function 
+   - Block Scope
+   Variables declared inside the curly brackets{} can not be accessed outside the block. 
+   - Laxical Scope
+   A variable defined  outside a function can be accessible inside another function defined
+   after variable declaration.
+
+   */
+
+   let greet = "hello";
+
+   function changeGreet(){
+    let greet = "hi";
+    console.log(greet);
+    function innerGreen(){
+      console.log(greet);
+
+    }
+   }
+   console.log(greet);
+   changeGreet();
+
+
 
 
 
