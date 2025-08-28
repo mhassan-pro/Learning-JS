@@ -108,3 +108,22 @@ random  = Math.floor(random);
 //Step 4 to get the exact number you entered add 1 in last.
 random = random+1;
 
+/* Functions   (most important topic in JS)
+    syntax : function nameOfFunction (parameters){
+        // function body
+    }
+
+    calling function : nameOfFunction(arguments);
+
+*/
+
+function hello(){
+  console.log("Hello")
+}
+
+hello(); // calling function
+
+
+
+
+
