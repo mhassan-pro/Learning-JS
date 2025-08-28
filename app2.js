@@ -191,7 +191,8 @@ console.log(sumReturn(3,6));
       }
       sum(33,4); 
 
-  /* Higher order function */
+  /* Higher order function 
+  it take one or multiple functions as arrgument */
 
 
 
