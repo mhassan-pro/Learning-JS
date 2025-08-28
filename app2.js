@@ -179,6 +179,19 @@ console.log(sumReturn(3,6));
    console.log(greet);
    changeGreet();
 
+  /* Functional Expression
+     const variable = function(arg 1,arg2){
+      // do or return something
+     } */
+
+      let name = "Hassan";
+    
+      let sum = function (a,b){
+        return a+b;
+      }
+      sum(33,4); 
+
+  /* Higher order function */
 
 
 
