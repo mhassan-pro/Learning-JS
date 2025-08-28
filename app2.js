@@ -123,6 +123,32 @@ function hello(){
 
 hello(); // calling function
 
+/* Functions with arrguments 
+   values we pss to the function
+
+   function funcName(arg1,arg2){
+    // function body
+       }
+*/
+
+function printInfo(name, age){
+
+  console.log(name,"  ",age);
+ 
+}
+
+printInfo("Hassan",23);
+
+function sum(a,b)
+{
+  sum =a + b;
+  console.log("Sum of numbers is :",sum);
+
+}
+sum(467,235);
+
+
+
 
 
 

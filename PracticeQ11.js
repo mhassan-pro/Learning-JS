@@ -21,3 +21,14 @@ function poem()
  }
 
 diceRoll(); // calling function
+
+  console.log("-------------------");
+
+  // Q 2 : Create a functon that gives us the average of 3 numbers.
+
+  function average(a,b,c,){
+    average = (a+b+c)/3;
+    console.log("Average of three numbers is :",average);
+  }
+
+  average(78,97,80);
