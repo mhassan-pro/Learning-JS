@@ -11,3 +11,13 @@ function poem()
   };
 
   poem(); // calling function
+
+  console.log("-------------------");
+ // Create a function to roll a dice and always display the value of the dice.
+
+ function diceRoll(){
+    let random = Math.floor(Math.random() * 6 )+ 1;
+    console.log(random);
+ }
+
+diceRoll(); // calling function
