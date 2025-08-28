@@ -147,6 +147,12 @@ function sum(a,b)
 }
 sum(467,235);
 
+// return function [ any thing written after the return will not execute ]
+
+function sumReturn(a,b){
+  return a+b;
+}
+console.log(sumReturn(3,6));
 
 
 

@@ -24,7 +24,7 @@ diceRoll(); // calling function
 
   console.log("-------------------");
 
-  // Q 2 : Create a functon that gives us the average of 3 numbers.
+  // Create a functon that gives us the average of 3 numbers.
 
   function average(a,b,c,){
     average = (a+b+c)/3;
@@ -35,7 +35,7 @@ diceRoll(); // calling function
 
   console.log("-------------------");
 
-  //Create a function that prints multiplication table of a number.
+  // Create a function that prints multiplication table of a number.
 
   function printTable()
    {
@@ -61,4 +61,34 @@ diceRoll(); // calling function
      }
    }
 
-   printTable(6);
+   printTable(6); 
+
+   console.log("-------------------");
+
+   // Create a function that returns the sum of numbers 1 to n.
+
+   function sumReturn(n){
+    let sum = 0;
+    for(let i =1; i<=n; i++)
+    {
+        sum = sum+i;
+    }
+    return sum;
+   }
+   let num = 45;
+   let final = sumReturn(num);
+   console.log(`Sum of the numbers from 1 to ${num} is : `,final );
+
+// Create a function that returns the concatination of all strings in an array.
+
+function concatString(){
+
+    let arr = ["Hassan", "A+", "Cust", "Islamabad"];
+    let finalStr = "";
+     for(let i=0; i<arr.length; i++)
+     {
+        finalStr +=arr[i];  
+     }
+     return finalStr;
+}
+ concatString();
