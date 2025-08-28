@@ -32,3 +32,33 @@ diceRoll(); // calling function
   }
 
   average(78,97,80);
+
+  console.log("-------------------");
+
+  //Create a function that prints multiplication table of a number.
+
+  function printTable()
+   {
+    let number  = prompt("Enter the number for table");
+    number = parseInt(number);
+    for (let i = 1; i <= 10; i++)
+     {
+        console.log(`${number} x ${i} = `,number*i);
+
+     }
+   }
+
+   printTable();
+
+   // or can be done by this method also
+
+     function printTable(n)
+   {
+    for (let i = 1; i <= 10; i++)
+     {
+        console.log(`${n} x ${i} = `,n*i);
+
+     }
+   }
+
+   printTable(6);
