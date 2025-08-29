@@ -27,6 +27,8 @@ function uniqueChar(str){
     }
 }
 uniqueChar(str);
+console.log("------------------------------------------");
+
 
 /* Qs3. Write a JavaScript function that accepts a list of country names as input and
 returns the longest country name as output.
@@ -43,10 +45,13 @@ output : "United States of America"
  /* Qs5. Write a JavaScript function to generate a random number within a range 
  (start,end).  */
 
- let start = prompt("Enter");
- start = parseInt(start);
+ console.log("------------------------------------------");
+
+
+let start = prompt("Enter");
+  start = parseInt(start);
 let end = prompt("Enter");
-end = parseInt(end);
+  end = parseInt(end);
 
  function randomNumber(start,end){
     for(let i=0; i<5; i++){
