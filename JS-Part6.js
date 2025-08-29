@@ -20,8 +20,11 @@ ans = “abcdefgh”
  */
 let str = "abcdabcdefgggh";
 function uniqueChar(str){
-    
-    console.log(str.slice());
+    for (let i = 0; i< str.length;i++){
+        if(str.indexOf(str[i]) == i){
+            console.log(str[i]);
+        }
+    }
 }
 uniqueChar(str);
 
