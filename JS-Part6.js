@@ -40,10 +40,20 @@ output : "United States of America"
  /* Qs5. Write a JavaScript function to generate a random number within a range 
  (start,end).  */
 
+ let start = prompt("Enter");
+ start = parseInt(start);
+let end = prompt("Enter");
+end = parseInt(end);
+
  function randomNumber(start,end){
+    for(let i=0; i<5; i++){
     let diff = end - start;
     let random = Math.floor(Math.random() * diff ) + start;
     console.log(random);
+    }
  }
 
- randomNumber(20,30);
+ randomNumber(start,end);
+
+
+
