@@ -41,6 +41,9 @@ output : "United States of America"
  (start,end).  */
 
  function randomNumber(start,end){
-    let random = Math.floor(Math.random() *end) + start;
+    let diff = end - start;
+    let random = Math.floor(Math.random() * diff ) + start;
     console.log(random);
  }
+
+ randomNumber(20,30);
