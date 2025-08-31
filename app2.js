@@ -192,8 +192,19 @@ console.log(sumReturn(3,6));
       sum(33,4); 
 
   /* Higher order function 
-  it take one or multiple functions as arrgument */
+     It take one or multiple functions as arrgument 
+     Return as function .*/
+     function multipleGreet(func,count){
+      for(let i =1; i<=count;i++){
+        func();
+      }
+     }
+     let greetFun = function() {
+      console.log("Hello")
+     }
+ multipleGreet(greetFunc,100);
 
+ 
 
 
 
