@@ -42,11 +42,29 @@ output : "United States of America"
     }
  }
 
- /* Qs5. Write a JavaScript function to generate a random number within a range 
- (start,end).  */
+console.log("------------------------------------------");
+ /* Qs4. Write a JavaScript function to count the number
+        of vowels in a String argument.
+ */
+let string = "Capital University Of Science & Technology";
 
+function numOfVowels(string){
+  let count = 0;
+  string.toLowerCase();
+  for(let i = 0; i < string.length; i++)
+  {
+    if(string[i] == "a" || string[i] == "e" || string[i] == "i" || string[i] == "o" || string[i] == "u"){
+        count ++;
+    }
+  }
+  return count;
+}
+  let finalAns =  numOfVowels(string);
+  console.log("Number of vowels in string are :",finalAns);
  console.log("------------------------------------------");
 
+ /* Qs5. Write a JavaScript function to generate a random number within a range 
+ (start,end).  */
 
 let start = prompt("Enter");
   start = parseInt(start);
