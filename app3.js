@@ -18,4 +18,56 @@ student.avg;
    the Try statement allows you to define a block of code to be tested for error while it is being executed.
     the Catch statement allows you to define a block of code to be execued if an error occurs in a block.
  */
+try{
+    console.log(a);
+}
+catch{
+    console.log("Error found");
+}
 
+/* Miscellaneous Topics
+  Arrow functions syntax[ const func=(arg1,arg2) => { function definition} ] */
+
+  const sum = (a,b) => {
+    console,log(a+b);
+  }
+  sum(23,54);
+
+  const pow = (a,b) => {
+    return a ** b;
+  }
+  pow (2,8);
+
+  // implicit return in Arrow function
+
+  const mul = (a,b) => (
+    a * b
+  );
+
+  /* Set Timeout
+   setTimeout (function ,timeout) 
+   It take time in mili second (1000 ms = 1 s )*/
+
+   console.log("Hi");
+
+   setTimeout( ()=> {
+    console.log("Apna College");
+   },5000); 
+
+   console.log("Wellcome");
+
+   /* Set Interval
+    setInterval (function, timeout);
+    it will print after every ( number of seconds ) provided 
+    Every call has an indiviual id 
+    To stop  clearInterval(id);*/
+
+    let id = setInterval(() => {
+        console.log("Hello World");
+    },2000);
+
+/* "this"  with arrow function 
+these function uses lexical scope 
+for nomal function this refers to the object that is calling the function
+for arrow function this refers to the object where the function is defined
+*/
