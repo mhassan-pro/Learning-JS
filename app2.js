@@ -215,24 +215,25 @@ function oddOrEven(request){
   if(request == "even")
   {
     let even = function(n){
-      return (n%2 == 0);
+      console.log(n%2 == 0);
     }
+    return even;
   }
   else if(request == "odd"){
     let odd = function(n){
-      return ( n%2 !== 2);
+      console.log( n%2 !== 0);
     }
+    return odd;
   }
   else{
     console.log("Invalid request");
   }
 }
 
-let request = prompt("Enter odd or even");
+let request = "even";
 oddOrEven(request);
-let n = prompt("Enter number");
-n = parseInt(n);
 
 
+// Methods
 
 
