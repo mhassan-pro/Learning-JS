@@ -204,8 +204,34 @@ console.log(sumReturn(3,6));
      }
  multipleGreet(greetFunc,100);
 
- 
 
+//Higher order function order return.
+
+
+
+
+
+function oddOrEven(request){
+  if(request == "even")
+  {
+    let even = function(n){
+      return (n%2 == 0);
+    }
+  }
+  else if(request == "odd"){
+    let odd = function(n){
+      return ( n%2 !== 2);
+    }
+  }
+  else{
+    console.log("Invalid request");
+  }
+}
+
+let request = prompt("Enter odd or even");
+oddOrEven(request);
+let n = prompt("Enter number");
+n = parseInt(n);
 
 
 
