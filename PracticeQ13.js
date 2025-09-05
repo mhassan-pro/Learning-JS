@@ -1,7 +1,7 @@
 /* Reduce Method
 Finding Maximum in an array */
 
-let num = [1,2,3,4,5,6,7,2,8,9,2];
+let num = [1,2,3,4,5,6,,11,34,65,7,2,8,9,2];
 
 let finalValue = num.reduce((max,el) => 
 {
@@ -13,7 +13,8 @@ let finalValue = num.reduce((max,el) =>
     }
 }
 )
-console.log(finalValue);
+console.log("The maximun value is :",finalValue);
+console.log("==========================");
 
 /* Check if all the numbers in our array are 
 multiple of 10 or not  */
@@ -27,3 +28,7 @@ let finalValue2 = num2.every((el) =>
     }
 )
 console.log(finalValue2);
+
+console.log("==========================");
+
+/* */
