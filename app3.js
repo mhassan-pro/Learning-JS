@@ -91,7 +91,7 @@ let num1 = [0,2,4];
 let finalValue1 = num.every((el) => el % 2 == 0 );
 console.log(finalValue1);
 
-// Reduce Method
+// Reduce Method [0 is ddefault value if not provided first element is taken as default value]
 let num = [1,2,3,4,5];
 let finalValue = num.reduce((res,el) => res + el );
 console.log(finalValue);
