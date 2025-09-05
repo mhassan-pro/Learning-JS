@@ -71,3 +71,27 @@ these function uses lexical scope
 for nomal function this refers to the object that is calling the function
 for arrow function this refers to the object where the function is defined
 */
+
+
+// Arry Methods  they take callback as input
+// forEach arr.forEach(some function defination or name);
+
+let arr = [1,2,3,4,5];
+
+let print = function(el){
+  console.log(el)
+};
+arr.forEach(print);
+
+/* Every Method
+Return true  value if every element of array gives true for some function Else return false 
+arr.every(some function defination or name); */
+
+let num1 = [0,2,4];
+let finalValue1 = num.every((el) => el % 2 == 0 );
+console.log(finalValue1);
+
+// Reduce Method
+let num = [1,2,3,4,5];
+let finalValue = num.reduce((res,el) => res + el );
+console.log(finalValue);
