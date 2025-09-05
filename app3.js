@@ -91,7 +91,28 @@ let num1 = [0,2,4];
 let finalValue1 = num.every((el) => el % 2 == 0 );
 console.log(finalValue1);
 
-// Reduce Method [0 is ddefault value if not provided first element is taken as default value]
+// Reduce Method [if the initial value is not given it starts with first element ]
 let num = [1,2,3,4,5];
 let finalValue = num.reduce((res,el) => res + el );
 console.log(finalValue);
+
+/*  Default Parameters
+  Giving the default value to the argument
+  function func (a, b = 2)
+   { 
+     // do something 
+    } */
+   function power(a, b=3){
+    return Math.pow(a,b);
+   }  
+ 
+   console.log(power(5));
+
+
+   /* Spread
+    Spread and iterable into multiple values
+     function func (..arr) 
+      {
+       // do something
+      }
+  */
