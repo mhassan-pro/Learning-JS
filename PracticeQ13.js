@@ -31,4 +31,17 @@ console.log(finalValue2);
 
 console.log("==========================");
 
-/* */
+// Create a function to find minimum number in an array.
+
+let  num3 = [-1,3,5,2,7,8,4,9,-10];
+
+let finalValue3 = num3.reduce( (min,el) => 
+{
+    if(min < el)
+    {
+        return el;
+    }
+    else{
+        return min;
+    }
+});
