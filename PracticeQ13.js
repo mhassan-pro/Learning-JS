@@ -39,9 +39,11 @@ let finalValue3 = num3.reduce( (min,el) =>
 {
     if(min < el)
     {
-        return el;
-    }
-    else{
         return min;
     }
+    else{
+        return el;
+    }
 });
+
+console.log("The minimum value is :",finalValue3)
