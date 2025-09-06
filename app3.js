@@ -111,8 +111,29 @@ console.log(finalValue);
 
    /* Spread
     Spread and iterable into multiple values
-     function func (..arr) 
+     function func (...arr) 
       {
        // do something
       }
   */
+  function newFunc(...num){
+    console.log(num);
+
+  }
+  newFunc(1,2,3,5,6);
+    
+// Spread with array
+
+let arr1=[1,2,3,4,5];
+let newArr = [...arr1];
+console.log(newArr);
+
+// Spread with objects
+let data = {
+  email:"Mhassan.pro@gmail.com",
+  password:"asdfg"
+}
+let dataCopy = {...data, id:1234, country:"Pakistan"};
+console.log(dataCopy);
+
+
