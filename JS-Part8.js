@@ -13,6 +13,7 @@ console.log(sum);
 let avg = sum / nums.length;
 console.log(avg);
 
+console.log("==============================");
 /* Qs2.Create a new array using the map function
  whose each elementis equal to the original element plus 5. */
 
@@ -20,3 +21,14 @@ let arr = [1,2,3,4,5];
 let newArr = arr.map( (el) => el + 5 );
 
 console.log(newArr); 
+console.log("==============================");
+
+/* Qs3. Create a new array whose elements are in uppercase of words present in the
+original array.
+ */
+
+let words = ["hello","hi","bye","good","bad","new"];
+let upperCaseWords = words.map( (el) => el.toUpperCase() );
+console.log(upperCaseWords);
+
+console.log("==============================");
