@@ -32,3 +32,17 @@ let upperCaseWords = words.map( (el) => el.toUpperCase() );
 console.log(upperCaseWords);
 
 console.log("==============================");
+/* Qs4. Write a function called doubleAndReturnArgs which accepts an array and a
+variable number of arguments. The function should return a new array with the original
+array values and all of the additional arguments doubled.*/
+
+let doubleAndReturnArgs = (arr,...args) =>
+[ 
+    ...arr,...args.map((el) => el * 2),
+];
+
+console.log( doubleAndReturnArgs([2,6,4],223,55)
+)
+
+
+console.log("==============================");
