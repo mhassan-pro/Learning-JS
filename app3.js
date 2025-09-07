@@ -154,11 +154,26 @@ sum(1,2,3,4,5,6,7,8,9);
 /* Destructuring
 stroing values of arrays in multiple variables. */ 
 
-let names = ["ali","hamza","asad","umer"];
+let names = ["ali","hamza","asad","umer","umair","zohaib","imran","sultan"];
 //let winner = names[0];
 //let runnerUp = names[1];
 //let secondRunnerUp = names[2];
 
-let [winner, runnerUp, secondRunnerUp] = names
+let [winner, runnerUp , others] = names  // others will use rest concept to store the remaning values.
 
+// Destructuring object
+
+const student1 = {
+  name:"umer",
+  age:23,
+  class:12,
+  subject:["Math","Computer Science","Physics"],
+  username:"umer@123",
+  password:"asdf"
+}
+
+//let username =  student1.username;
+//let password = student1.password;
+
+let {username : user , password : secret,  city = "Bahawalpur", country = "Pakistan"} = student1; // city and country are not present in the object so it will take the default values provided
 
