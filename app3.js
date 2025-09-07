@@ -175,5 +175,5 @@ const student1 = {
 //let username =  student1.username;
 //let password = student1.password;
 
-let {username : user , password : secret,  city = "Bahawalpur", country = "Pakistan"} = student1; // city and country are not present in the object so it will take the default values provided
+let {username : user , password : secret,  city:place = "Bahawalpur", country = "Pakistan"} = student1; // city and country are not present in the object so it will take the default values provided
 
