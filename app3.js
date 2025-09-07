@@ -137,3 +137,28 @@ let dataCopy = {...data, id:1234, country:"Pakistan"};
 console.log(dataCopy);
 
 
+/* Rest
+ Allows a function to take an indefinite number of arrguments and bundle them in an array */
+  
+function sum(...args){
+  for (let i = 0; i < args.length; i++){
+    console.log("You gave us :",args[i])
+  }
+}
+
+function sum(...args){
+  return args.reduce( (sum,el) => sum + el);
+}
+sum(1,2,3,4,5,6,7,8,9);
+
+/* Destructuring
+stroing values of arrays in multiple variables. */ 
+
+let names = ["ali","hamza","asad","umer"];
+//let winner = names[0];
+//let runnerUp = names[1];
+//let secondRunnerUp = names[2];
+
+let [winner, runnerUp, secondRunnerUp] = names
+
+
