@@ -190,4 +190,15 @@ let {username : user , password : secret,  city:place = "Bahawalpur", country = 
     -> document.querySelector ('#myId') select first element with id= myId
     -> document.querySelector ('.myClass') select first element with class=myClass
     -> document.querySelectorAll ("p") select all p elements
-     */
+  */
+
+  /* Using Properties & Methods
+    -> innerText : shows the visible ext contain in a node 
+    -> TEXTcONTENT : shows the entire text
+    -> innerHTML : shows full markup
+ */
+
+  /* Manipulating Attributes
+    ->obj.getAttribute( attr )
+    ->obj.stAttributes( attr, val)
+  */
