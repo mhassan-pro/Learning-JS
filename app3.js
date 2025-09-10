@@ -182,4 +182,12 @@ let {username : user , password : secret,  city:place = "Bahawalpur", country = 
    Select Elements
   -> getElementsById  (returns the element as an object or null (if not found) ).
   -> getElementsByClassName (Returns the Element as an HTML Collection or empty collection if not found).
-  -> */
+  -> getElementsByTagName (return the elements as an html collection or empty collection (if not found). )*/
+
+  /* Query Selectors
+    -> Allows us to use any CSS selector
+    -> document.querySelector ('p'); Selects first p element 
+    -> document.querySelector ('#myId') select first element with id= myId
+    -> document.querySelector ('.myClass') select first element with class=myClass
+    -> document.querySelectorAll ("p") select all p elements
+     */
