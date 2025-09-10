@@ -177,3 +177,9 @@ const student1 = {
 
 let {username : user , password : secret,  city:place = "Bahawalpur", country = "Pakistan"} = student1; // city and country are not present in the object so it will take the default values provided
 
+
+/* DOM Manipulation
+   Select Elements
+  -> getElementsById  (returns the element as an object or null (if not found) ).
+  -> getElementsByClassName (Returns the Element as an HTML Collection or empty collection if not found).
+  -> */
