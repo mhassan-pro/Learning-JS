@@ -22,3 +22,19 @@ background color to blue and text color to white.
  */
 let btn = document.querySelector('#btn');
 btn.classList.add('btnStyle');
+
+/* Qs4. Create an h1 element on the page and set its text to “DOM Practice” underlined.
+Change its color to purple.
+ */
+
+let h1Element = document.createElement('h1');
+body.append(h1Element);
+h1Element.innerText = "DOM Practice";
+h1Element.classList.add('h1-Style');
+
+/*Qs5. Create a p tag on the page and set its text to “Apna College Delta Practice”,
+where Delta is bold.  */
+
+let pElement = document.createElement('p');
+body.prepend(pElement);
+pElement.innerHTML = "Apna College <b>Delta</b> Practice";
