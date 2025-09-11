@@ -234,3 +234,7 @@ let {username : user , password : secret,  city:place = "Bahawalpur", country = 
      -> removeChild (element)
      -> remove (element)
   */
+/* DOM Events
+   -> Events are signals that something has occurred.(user input / action)
+   ->
+*/ 

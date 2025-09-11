@@ -15,7 +15,8 @@ buttonElement.innerText = "Click me";
 - Change the id of button to “btn” */
 
 buttonElement.setAttribute('id','btn');
-inputElement.setAttribute('type', 'text')
+inputElement.setAttribute('type', 'text');
+inputElement.setAttribute('placeholder','username')
 
 /* Qs3. Access the btn using the querySelector and button id. Change the button
 background color to blue and text color to white.
@@ -36,5 +37,5 @@ h1Element.classList.add('h1-Style');
 where Delta is bold.  */
 
 let pElement = document.createElement('p');
-body.prepend(pElement);
+body.append(pElement);
 pElement.innerHTML = "Apna College <b>Delta</b> Practice";
