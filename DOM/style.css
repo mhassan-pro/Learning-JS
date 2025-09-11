@@ -1,6 +1,9 @@
 body {
   font-family: Arial;
 }
+.color{
+  color:red;
+}
 
 #mainImg {
   width: 35%;

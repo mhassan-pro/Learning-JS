@@ -198,7 +198,20 @@ let {username : user , password : secret,  city:place = "Bahawalpur", country = 
     -> innerHTML : shows full markup
  */
 
-  /* Manipulating Attributes
+  /* Manipulating Attributes (basically these are called getter and setter)
     ->obj.getAttribute( attr )
-    ->obj.stAttributes( attr, val)
+    ->obj.setAttributes( attr, val)
+
+    Manipulating Style
+    -> style property
+    -> obj.style 
+  */
+  /* Manipulating Style
+     using classList Property
+
+    -> obj.classList
+    -> obj.classList.add('className') : add a class
+    -> obj.classList.remove('className') : remove a class
+    -> obj.classList.toggle('className') : toggle between add & remove
+    -> obj.classList.contains('className') : return true or false if the class is present or not
   */
