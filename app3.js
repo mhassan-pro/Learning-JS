@@ -224,10 +224,13 @@ let {username : user , password : secret,  city:place = "Bahawalpur", country = 
   */
 
   /* Adding Elements
-      -> document.createElements (`tagname`)
-    -> appendChild (element)
+      -> document.createElements (`tagname`) use to create new elements.
+    -> appendChild (element) use to add elements as a child to the parent element
     -> append (element)
     -> prepend (element)
     -> insertAdjacent (where, element)
 
+    Removing Elements
+     -> removeChild (element)
+     -> remove (element)
   */
