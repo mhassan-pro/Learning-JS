@@ -215,3 +215,19 @@ let {username : user , password : secret,  city:place = "Bahawalpur", country = 
     -> obj.classList.toggle('className') : toggle between add & remove
     -> obj.classList.contains('className') : return true or false if the class is present or not
   */
+  /* Navigation
+    -> parentElement 
+    -> children
+    -> childElementCount
+    -> nextElementSibling
+    -> previousElementSibling 
+  */
+
+  /* Adding Elements
+      -> document.createElements (`tagname`)
+    -> appendChild (element)
+    -> append (element)
+    -> prepend (element)
+    -> insertAdjacent (where, element)
+
+  */
