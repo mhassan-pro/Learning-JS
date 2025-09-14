@@ -237,4 +237,14 @@ let {username : user , password : secret,  city:place = "Bahawalpur", country = 
 /* DOM Events
    -> Events are signals that something has occurred.(user input / action)
    ->
+   onclick ( when an element is clicked)
+   onmouseenter (when mouse enters an element)
 */ 
+ 
+/* Event Listener
+
+   element.addEventListener(event, callback)
+*/
+
+
+
