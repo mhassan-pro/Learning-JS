@@ -3,4 +3,6 @@ let body = document.querySelector('body');
 body.append(btn);
 btn.innerText = "Click !me"
 
-btn.addEventListener('click')
+btn.addEventListener('click' , function(){
+    btn.style.backgroundColor = "blue"; 
+})
