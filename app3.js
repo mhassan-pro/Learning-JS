@@ -244,7 +244,12 @@ let {username : user , password : secret,  city:place = "Bahawalpur", country = 
 /* Event Listener
 
    element.addEventListener(event, callback)
+
+   Keyboard Events
+   key : it tell us which key is pressed
+   code : it retrun the particular code of key pressed
 */
+
 
 
 
