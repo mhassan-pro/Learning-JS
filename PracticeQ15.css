@@ -1,0 +1,14 @@
+
+body{
+    text-align: center;
+}   
+.btn{
+    margin-bottom: 20px;
+}
+ .div-box{
+    border: 2px solid black;
+    width: 60%;
+    height: 150px;
+    text-align: center;
+    margin: auto;
+}
