@@ -248,7 +248,13 @@ let {username : user , password : secret,  city:place = "Bahawalpur", country = 
    Keyboard Events
    key : it tell us which key is pressed
    code : it retrun the particular code of key pressed
+
+   More Event
+   -> channge event : it occurs when value of an element has been changed (only works on input,textarea,and select elements).
+   -> input event : the event fires when the value of an input ,select or textarea element has been changed (character key only trigger).
 */
+
+
 
 
 
