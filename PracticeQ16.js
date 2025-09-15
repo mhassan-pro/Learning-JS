@@ -1,8 +1,10 @@
 let input = document.querySelector("input");
 let btn = document.querySelector("button");
-let oderList = document.querySelector("ol");
+let ul = document.querySelector("ul");
 
 btn.addEventListener('click', function() {
-
-
+    let item = document.createElement('li');
+    item.innerText = input.value;
+    input.value = "";
+    ul.appendChild(item);
 })
