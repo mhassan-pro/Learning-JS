@@ -254,6 +254,22 @@ let {username : user , password : secret,  city:place = "Bahawalpur", country = 
    -> input event : the event fires when the value of an input ,select or textarea element has been changed (character key only trigger).
 */
 
+/* Call Stack 
+   -> A data structure that track which function in calling 
+    */
+
+   function one(){
+    return 1;
+   }
+   function two(){
+    return one() + one();
+   }
+   function three(){
+    let ans = two() + one();
+    console.log(ans); 
+   }
+
+   three();
 
 
 
