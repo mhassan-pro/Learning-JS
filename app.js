@@ -28,10 +28,18 @@ function saveToDb(data, success, failure){
 }
 
 saveToDb("apna college",() => {
-     console.log("your data was saved");
+     console.log("success 1:your data was saved");
      saveToDb("hello world", 
         () => {
             console.log("success 2: data was saved")
+            saveToDb("Hassan",
+                () => {
+                    console.log("success 3: data was saved")
+                },
+                () => {
+                    console.log("failure 3: data was not saved")
+                }
+            )
         },
         () => {
             console.log("failuer 2 : data was not saved")
