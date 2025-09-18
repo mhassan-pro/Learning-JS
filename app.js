@@ -29,6 +29,14 @@ function saveToDb(data, success, failure){
 
 saveToDb("apna college",() => {
      console.log("your data was saved");
+     saveToDb("hello world", 
+        () => {
+            console.log("success 2: data was saved")
+        },
+        () => {
+            console.log("failuer 2 : data was not saved")
+        }
+     )
 }, () => {
      console.log("weak connection data was not saved")
 });
