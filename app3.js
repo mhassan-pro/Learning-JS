@@ -272,6 +272,112 @@ let {username : user , password : secret,  city:place = "Bahawalpur", country = 
    three();
 
 
+   // Promises
+
+
+   function changeColor(color, delay){
+   return new Promise((resolve,reject) => {
+         setTimeout(() => {
+        h1.style.color = color;
+        resolve("color changed")
+    },delay)
+
+    })
+}
+
+changeColor("red",1000)
+.then( () => {
+    console.log("Changed to red color")
+    return changeColor("orange",1000)
+})
+.then( () => {
+    console.log("Changed to orange color")
+    return changeColor("purple",1000)
+})
+.then( () => {
+    console.log("Changed to purple color")
+    return changeColor("blue",1000)
+})
+.then( () => {
+    console.log("Changed to blue color")
+    return changeColor("green",1000)
+})
+.then( () => {
+    console.log("Changed to green color")
+    
+})
+.catch( () => {
+    console.log("There is sme error")
+})
+   
+
+function saveToDb(data, success, failure){
+    let randomInternetSpeed = Math.floor(Math.random() *10) + 1;
+    if(randomInternetSpeed > 5){
+        success();
+    } else{
+       failure();
+    }
+}
+
+saveToDb("apna college",() => {
+     console.log("success 1:your data was saved");
+     saveToDb("hello world", 
+        () => {
+            console.log("success 2: data was saved")
+            saveToDb("Hassan",
+                () => {
+                    console.log("success 3: data was saved")
+                },
+                () => {
+                    console.log("failure 3: data was not saved")
+                }
+            )
+        },
+        () => {
+            console.log("failuer 2 : data was not saved")
+        }
+     )
+}, () => {
+     console.log("weak connection data was not saved")
+});
+
+function saveToDb(data){
+    return new Promise ( (resolve, reject) => {
+
+        let randomInternetSpeed = Math.floor(Math.random() *10) + 1;
+        if(randomInternetSpeed > 4){
+            resolve("data was saved");
+        }
+        else{
+            reject("data was not saved, weak connection");
+        }
+    });
+}    
+//promise Chaining
+saveToDb("Apna College")
+    .then((result) => {
+        console.log("data 1 saved : promise was resolved");
+        console.log("result of promise",result)
+        return saveToDb("hello world")
+    })
+    .then( (result) => {
+        console.log("data 2 saved: promise was resolved")
+              console.log("result of promise",result)
+        return saveToDb("Hassan")
+    })
+    .then((result) => {
+        console.log("data 3 : was saved")
+              console.log("result of promise",result)
+    })
+    .catch((error)=>{
+        console.log("promise was rejected")
+              console.log("error of promise",error)
+    });
+
+
+
+
 
 
 
