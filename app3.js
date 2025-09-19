@@ -390,6 +390,10 @@ saveToDb("Apna College")
     });
 
 
+/* Async Function
+    creates an async function   (async and await) by default they return promise  */
+
+
 
 
 
