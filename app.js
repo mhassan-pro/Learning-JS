@@ -32,12 +32,17 @@ let h1 = document.querySelector("h1");
 }
 
 async function demo(){
-     await changeColor("pink",1000);
-     await changeColor("red",1000);
-     await changeColor("green",1000);
-     await changeColor("blue",1000);
-     await changeColor("yellow",1000);
-     await changeColor("orange",1000);
+    try {
+        await changeColor("pink",1000);
+        await changeColor("red",1000);
+        await changeColor("green",1000);
+        await changeColor("blue",1000);
+        await changeColor("yellow",1000);
+        await changeColor("orange",1000)}
+    catch (error){
+        console.log(error)
+    }
+     
 
      let a = 5;
      console.log(a);
