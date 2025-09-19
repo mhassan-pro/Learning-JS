@@ -271,6 +271,20 @@ let {username : user , password : secret,  city:place = "Bahawalpur", country = 
 
    three();
 
+/*call back hell
+ changeColor("red",1000,() => {
+    changeColor("orange",1000,()=>{
+        changeColor("blue",1000,() => {
+            changeColor("green",1000,() =>{
+                changeColor("purple",1000,() =>{});
+            });
+        });
+    });
+});
+*/
+
+    
+
 
    // Promises
 
