@@ -394,8 +394,85 @@ saveToDb("Apna College")
     creates an async function   (async and await) by default they return promise  */
 
 
+// async function greet(){
+//     throw "page not found"
+//     return "hello world";
+// }
+// greet()
+// .then((result) => {
+//     console.log("promise was resolved",result);
+// })
+// .catch((error) => {
+//     console.log("promise was rejected",error)
+// })
+
+// let demo =async() => {
+//     return 5;
+// }
+
+ function changeColor(color, delay){
+   return new Promise((resolve,reject) => {
+         setTimeout(() => {
+            let num = Math.floor(Math.random() * 5);
+            if (num > 3){
+                reject("Promise rejected")
+            }
+        h1.style.color = color;
+        console.log("Color changed to ",color)
+        resolve("color changed")
+    },delay)
+
+    })
+}
+
+async function demo(){
+    try {
+        await changeColor("pink",1000);
+        await changeColor("red",1000);
+        await changeColor("green",1000);
+        await changeColor("blue",1000);
+        await changeColor("yellow",1000);
+        await changeColor("orange",1000)}
+    catch (error){
+        console.log(error)
+    }
+     
+
+     let a = 5;
+     console.log(a);
+
+}
 
 
+
+function getNum (){
+    return new Promise((resolved,reject) => {
+        setTimeout(() => {
+            let num = Math.floor(Math.random() * 10) + 1;
+            console.log(num)
+            resolved();
+        },1000);
+
+    })
+}
+
+async function greet(){
+     for(let i = 0;i< 10 ;i++){
+        await getNum();
+     }
+}
+
+
+/* JSON
+    JavaScript Object Notation
+    
+    ->JSON.parse(data) method
+    to parse a string data into json object.
+
+    ->JSON.stringify(json) method
+    to parse a JS object into JSON 
+
+ */
 
 
 
