@@ -1,6 +1,6 @@
 
 let btn = document.querySelector("button");
-let img = document.querySelector("#dogImg");    
+let list = document.querySelector("ul");    
 
 btn.addEventListener('click', async () => {
     let country = document.querySelector("input").value;
@@ -13,8 +13,14 @@ btn.addEventListener('click', async () => {
 })
 
 function show(colleges){
-    for(col of colleges)
+    list.innerText = "";
+    for(col of colleges){
         console.log(col);
+        
+        let li = document.createElement("li")
+        li.innerText = col.name;
+        list.appendChild(li);
+    }
 
 }
 
