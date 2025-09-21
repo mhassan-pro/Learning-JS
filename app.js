@@ -2,23 +2,20 @@
 let btn = document.querySelector("button");
 let img = document.querySelector("#dogImg");    
 
-btn.addEventListener('click', async ()=>{
-    let image = await getImage();
-    console.log("image:",image);
-    img.setAttribute("src",image);
-    img.scroll.image;
-
+btn.addEventListener('click', async () => {
+    let country = document.querySelector("input").value;
+    console.group(country)
+    let colleges =await getColleges(country);
+    console.log(colleges)
 })
+let url = "http://universities.hipolabs.com/search?name=";
 
- let url = "https://dog.ceo/api/breeds/image/random";
-
- async function getImage(){
+async function getColleges(country){
     try{
-    let reqImg = await axios.get(url);
-    return reqImg.data.message;
- }
- catch(err){
-    console.log("errrr---",err)  
-    return "no image found";
- }
+       let result = await axios.get(url+country);
+       return result.data;
+    }
+    catch(error){
+        console.log("error 404".error);
+    }
 }
